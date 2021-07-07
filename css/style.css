@@ -1,5 +1,28 @@
 
 /* Typographie */
+/* Montserrat Regular */
+@font-face {
+    font-family: 'Montserrat';
+    src: url(../fonts/Montserrat/Montserrat-Regular.ttf);
+    font-style: normal;
+}
+
+/* Monserrat Medium */
+@font-face {
+    font-family: 'Monserrat';
+    src: url(../fonts/Montserrat/Montserrat-Medium.ttf);
+}
+
+/*Monserrat SemiBold */
+@font-face {
+    font-family: 'Monserrat';
+    src: url(../fonts/Montserrat/Montserrat-SemiBold.ttf);
+}
+/* Raleway Bold */
+@font-face {
+    font-family: 'Raleway';
+    src: url(../fonts/Raleway/static/Raleway-Bold.ttf);
+}
 body {
     font-family: sans-serif;
     font-size: 1.6rem;
@@ -7,6 +30,11 @@ body {
     color: #000;
     background-color: #fff;
 }
+
+h2 {
+    text-align: center;
+}
+/* Atomic CSS */
 .row {
     display: flex;
 }
@@ -32,13 +60,84 @@ body {
     justify-content: space-between;
 }
 
+/* Custom Properties */
+:root {
+    --primary: #FD7E37;
+    --primary-shadow: #331100;
+    --primary-light: #663014;
+    --grey-darker: #707070;
+    --grey: rgba(0, 0, 0, 0.502);
+    --grey-light: #00000029;
+    --white: #FFFFFF;
+}
+
 /* Layout */
 
 .container {
     width: 100%;
-    max-width: 116rem;
+    max-width: 220rem;
     margin-left: auto;
     margin-right: auto;
     padding-left: 2rem;
     padding-right: 2rem;
+}
+ /* header */
+
+ header {
+    background-color: var(--primary);
+    color: var(--white);
+ }
+
+ .hero {
+    background: url(../img/Home-1920/Photo-arriere-plan-result.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+ }
+ .hook {
+     justify-content: right;
+     background-color: var(--grey);
+     align-items: flex-end;
+     margin-right: 2rem;
+     padding-top: 24rem;
+ }
+
+ /* main */
+main {
+    background-color: var(--white);
+}
+.cards {
+     grid-template-columns: repeat(3, 1fr);
+     gap: 2rem;
+ }
+.cards-content {
+    box-shadow:  .1rem .1rem 2.5rem var(--grey-light);
+}
+
+
+/* section students */
+
+.students-section {
+    background-color: var(--primary);
+    color: var(--white);
+}
+.students-profiles {
+    grid-template-columns: repeat(4, 1fr);
+}
+
+
+/* section modules */
+
+.modules-grids {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+}
+
+
+/* footer */
+footer {
+    background-color: var(--primary);
+    color: white;
+}
+.grids-footer {
+    grid-template-columns: repeat(3, 1fr);
 }
