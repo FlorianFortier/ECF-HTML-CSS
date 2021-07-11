@@ -30,9 +30,21 @@ body {
     color: #000;
     background-color: #fff;
 }
-
+a {
+    text-decoration: none;
+    color: var(--white);
+}
+p {
+    font-size: 2rem;
+    line-height: 1.2;
+}
 h2 {
     text-align: center;
+    font-size: 4.8rem;
+    font-family: 'Raleway';
+    margin-top: 4rem;   
+    margin-bottom: 4rem;
+    color: var(--primary-shadow);
 }
 /* Atomic CSS */
 .row {
@@ -75,7 +87,7 @@ h2 {
 
 .container {
     width: 100%;
-    max-width: 220rem;
+    max-width: 142rem;
     margin-left: auto;
     margin-right: auto;
     padding-left: 2rem;
@@ -87,11 +99,41 @@ h2 {
     background-color: var(--primary);
     color: var(--white);
  }
-
+.title,
+.list-items {
+    text-transform: uppercase;
+}
+.title {
+    font-size: 4.8rem;
+    padding-top: 2.2rem;
+    padding-bottom: 2.2rem;
+    font-family: 'Raleway';
+}
+.list-items {
+    padding-right: 4rem;
+    font-size: 2rem;
+    font-family: 'Montserrat';
+    font-weight: 600;
+    font-style: normal;
+    line-height: 1.2;
+}
+.menu-list {
+margin-left: 16.5rem;
+}
+#home > a {
+    color: var(--primary);
+    background-color: var(--white);
+    padding: 1rem 2rem; 
+}
+ /* Hero */
  .hero {
     background: url(../img/Home-1920/Photo-arriere-plan-result.jpg);
     background-size: cover;
     background-repeat: no-repeat;
+    min-width: 100%;
+ }
+ .hero > .container {
+     position: relative;
  }
  .hook {
      justify-content: right;
@@ -99,6 +141,12 @@ h2 {
      align-items: flex-end;
      margin-right: 2rem;
      padding-top: 24rem;
+     max-width: 95rem;
+     max-height: auto;
+ }
+ .hook > p {
+     font-size: 7.2rem;
+
  }
 
  /* main */
@@ -107,12 +155,30 @@ main {
 }
 .cards {
      grid-template-columns: repeat(3, 1fr);
-     gap: 2rem;
+     gap: 3rem;
  }
 .cards-content {
-    box-shadow:  .1rem .1rem 2.5rem var(--grey-light);
+    max-width: 41rem;
+    box-shadow:  .1rem .1rem 3.5rem var(--grey-light);
 }
-
+.cards-content-img {
+    width: 100%;
+}
+.cards-content a {
+    background-color: ;
+}
+.cards-title {
+    color: var(--primary-shadow);
+    font-size: 2.4rem;
+    line-height: 1.5;
+    font-family: 'Raleway';
+}
+.cards-text {
+    color: var(--primary-shadow);
+    font-family: 'Monserrat';
+    font-style: normal;
+    font-weight: 100;
+}
 
 /* section students */
 
