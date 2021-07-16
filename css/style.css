@@ -244,9 +244,9 @@ nav {
         transform: translateX(0);
     }
 }
-@media screen and (min-width: 62em) {
+/* @media screen and (min-width: 62em) {
     .
-}
+} */
  /* Hero */
  .hero {
     background: url(../img/Home-1920/Photo-arriere-plan-result.jpg);
