@@ -132,7 +132,7 @@ h2 {
         font-size: 1.6rem;
     }
 }
-@media screen and  (min-width: 92em) {
+@media screen and  (min-width: 99.2em) {
     .container {
         max-width: 142rem;
     }
@@ -226,13 +226,16 @@ nav {
     padding: 1rem;
 } 
 @media screen and (min-width: 32em) { /* Indiquer les mesures en em avec une base de 16px - Ex : 576/16 = 36em*/
+    .toggle-menu {
+        display: inline;
+     }
     .menu,
     .menu[hidden] {
         display: flex;
         flex-direction: row;
     }
 }
-@media screen and (min-width: 48em) { /* Indiquer les mesures en em avec une base de 16px - Ex : 576/16 = 36em*/
+@media screen and (min-width: 62em) { /* Indiquer les mesures en em avec une base de 16px - Ex : 576/16 = 36em*/
     .toggle-menu {
         display: none;
     }
