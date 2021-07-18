@@ -22,12 +22,12 @@ body {
 /* Set text selection */
 ::-moz-selection {
   color: #000;
-  background-color: #fd0;
+  background-color: #FD7E37;
 }
 
 ::selection {
   color: #000;
-  background-color: #fd0;
+  background-color: #FD7E37;
 }
 
 /* Remove default padding */

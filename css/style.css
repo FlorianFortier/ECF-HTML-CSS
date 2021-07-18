@@ -23,6 +23,21 @@
     font-family: 'Raleway';
     src: url(../fonts/Raleway/static/Raleway-Bold.ttf);
 }
+@font-face {
+    font-family: 'Raleway';
+    src: url(../fonts/Raleway/static/Raleway-SemiBold.ttf);
+}
+/* Custom Properties */
+:root {
+    --primary: #FD7E37;
+    --primary-shadow: #331100;
+    --primary-light: #663014;
+    --grey-darker: #707070;
+    --grey: rgba(0, 0, 0, 0.502);
+    --grey-light: #00000029;
+    --white: #FFFFFF;
+}
+
 body {
     font-family: 'Montserrat', sans-serif;
     font-size: 1.6rem;
@@ -52,7 +67,7 @@ h2 {
     text-align: center;
     font-size: 4.8rem;
     font-family: 'Raleway', sans-serif;
-    margin-top: 4rem;   
+    padding-top: 4rem;
     margin-bottom: 4rem;
     color: var(--primary-shadow);
 }
@@ -81,16 +96,15 @@ h2 {
 .jtsb {
     justify-content: space-between;
 }
-
-/* Custom Properties */
-:root {
-    --primary: #FD7E37;
-    --primary-shadow: #331100;
-    --primary-light: #663014;
-    --grey-darker: #707070;
-    --grey: rgba(0, 0, 0, 0.502);
-    --grey-light: #00000029;
-    --white: #FFFFFF;
+.primary-shadow {
+    color: var(--primary-shadow); /* Pour appliqué des properties sur les h1 des autres pages sans avoir a refaire une classe entiere pour chacun*/
+    text-align: center;
+    font-size: 4.8rem;
+    font-family: 'Raleway', sans-serif;
+    margin-top: 4rem;   
+    margin-bottom: 4rem;
+    color: var(--primary-shadow);
+    text-shadow: none;
 }
 
 /* Layout */
@@ -102,6 +116,13 @@ h2 {
     margin-right: auto;
     padding-left: 2rem;
     padding-right: 2rem;
+}
+.container-narrow {
+    width: 100%;
+    max-width: 90rem;
+    margin-left: auto;
+    margin-right: auto;
+
 }
 @media screen and (min-width: 20em) {
     .container {
@@ -154,11 +175,11 @@ h2 {
     font-size: 4.8rem;
     padding-top: 2.2rem;
     padding-bottom: 2.2rem;
-    font-family: 'Raleway';
+    font-family: 'Raleway', sans-serif;
 }
 .list-items {
     padding-right: 4rem;
-    font-family: 'Montserrat';
+    font-family: 'Montserrat', sans-serif;
     font-weight: 600;
     font-style: normal;
     line-height: 1.2;
@@ -173,16 +194,17 @@ nav {
 }
 /* Nav burger */
 .toggle-menu {
-    padding: 0.25rem 1rem;
+    padding: 1rem 3rem;
     color: #FFF;
     background-color: rgba(0,0,0,.15);
     border: 0;
     border-radius: 2rem;
     transition: .3s;
-
+    margin-top: 1rem;
+    margin-bottom: 1rem;
 }
 .toggle-menu img {
-    max-width: 3.2rem;
+    max-width: 3.2em;
     max-height: 2rem;
 }
 
@@ -288,6 +310,7 @@ main {
 .cards {
      grid-template-columns: repeat(3, 1fr);
      gap: 3rem;
+     margin-bottom: 4rem;
  }
 .cards-content {
     max-width: 41rem;
@@ -302,14 +325,14 @@ main {
     color: var(--primary-shadow);
     font-size: 2.4rem;
     line-height: 1.5;
-    font-family: 'Raleway';
+    font-family: 'Raleway',sans-serif;
 }
 .cards-text {
     margin-bottom: 2.4rem;
 }
 .cards-text, .cards-baseline {
     color: var(--primary-shadow);
-    font-family: 'Montserrat';
+    font-family: 'Montserrat', sans-serif;
     font-weight: normal;
     line-height: 1.5;
     padding-top: 1.6rem;
@@ -322,7 +345,7 @@ main {
     justify-content: center;
     padding: .6rem;
     font-size: 2.4rem;
-    font-family: 'Montserrat';
+    font-family: 'Montserrat', sans-serif;
     font-weight: bold;
 }
 .cards-link > img {
@@ -363,7 +386,7 @@ a {
 .students > a {
     font-size: 1.6rem;
     font-weight: normal;
-    font-family: 'Montserrat';
+    font-family: 'Montserrat', sans-serif;
     text-decoration: underline;
     margin-bottom: 4.3rem;
 }
@@ -401,7 +424,7 @@ footer {
 }
 .footer-list-items > p  {
     margin-bottom: 1rem;
-    font-family: 'Montserrat';
+    font-family: 'Montserrat', sans-serif;
     font-weight: normal;
 }
 .legal-space > a > p {  
@@ -420,4 +443,77 @@ footer {
 }
 .social-media li {
     margin-right: 7rem;
+}
+
+
+
+
+
+
+/*Page La formation*/
+
+.text-page-bis {
+    font-size: 2.4rem;
+    font-family: 'Raleway', sans-serif;
+    line-height: 1.5;
+    margin-bottom: 4rem;
+    font-style: normal;
+    font-weight: 600;
+    color: var(--primary-shadow);
+}
+
+
+/* Page Les étudiants */
+.students-bis > p {
+    margin-top: 2rem;
+    font-weight: 600;
+}
+.students-bis > a {
+    color: var(--primary);
+    font-size: 1.6rem;
+    font-weight: normal;
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: underline;
+    margin-bottom: 4.3rem;
+}
+
+
+
+/* page contactez-nous */
+.inputs {
+    margin-bottom: 5rem;
+}
+input {
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+}
+textarea {
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+}
+form {
+    margin-top: 14rem;
+}
+::placeholder {
+    font-style: italic;
+}
+.submit-btn {
+    margin-top: 1rem;
+    justify-content: flex-end;
+    margin-bottom: 4rem;
+}
+.submit-btn > button {
+    background-color: var(--primary);
+    border: 0;
+    border-radius: .4rem;
+    color: var(--white);
+    padding: 1rem 2rem;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2.4rem;
+    font-weight: bold;
+}
+.submit-btn img {
+    margin-left: 2rem;
 }
