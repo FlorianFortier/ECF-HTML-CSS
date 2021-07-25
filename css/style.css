@@ -365,7 +365,7 @@ button:focus {
 }
 
 .menu:not([hidden]) {
-    top: 12%;
+    top: 9%;
 	transform: translateX(0);
 	transition: visibility .001s, transform .5s .001s ease-in;
     
