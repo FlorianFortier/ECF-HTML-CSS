@@ -484,6 +484,7 @@ main {
     color: var(--primary-shadow);
     font-size: 2.4rem;
     line-height: 1.5;
+    font-weight: normal;
     font-family: 'Raleway',sans-serif;
 }
 .cards-text {
@@ -515,7 +516,8 @@ main {
 article >
 p,
 article >
-a {
+a,
+article > h3 {
     padding-left: 1.5rem;
     padding-right: 1.5rem;
 }
